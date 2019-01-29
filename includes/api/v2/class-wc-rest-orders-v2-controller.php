@@ -379,8 +379,7 @@ class WC_REST_Orders_V2_Controller extends WC_REST_Legacy_Orders_Controller {
 
 			$args['meta_query'][] = array(
 				'key'   => '_customer_user',
-				'value' => $request['customer'],
-				'type'  => 'NUMERIC',
+				'value' => $request['customer']
 			);
 		}
 
